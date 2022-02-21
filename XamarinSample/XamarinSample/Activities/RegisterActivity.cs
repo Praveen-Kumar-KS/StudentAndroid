@@ -30,8 +30,9 @@ namespace XamarinSample.Activities
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //Bidings
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.RegisterScreen);
+            SetContentView(Resource.Layout.RegisterScreen); // View Call
             // Create your application here
             submit = FindViewById<Button>(Resource.Id.SubmitRegBtn);
             Name = FindViewById<EditText>(Resource.Id.nameregister);
@@ -42,14 +43,14 @@ namespace XamarinSample.Activities
             validation = FindViewById<TextView>(Resource.Id.ValidationMessage);
             email = FindViewById<EditText>(Resource.Id.mail);
             coordinatorLayout = FindViewById<CoordinatorLayout>(Resource.Id.layoutView);
-            this.FindViewById<Button>(Resource.Id.SubmitRegBtn).Click += this.RegisterAsync;
+            this.FindViewById<Button>(Resource.Id.SubmitRegBtn).Click += this.RegisterAsync; //Navigation through click event
 
         }
         public async void RegisterAsync(object sender, EventArgs e)
         {
-            if(RegisterValidation() && RegisterNumberValidation() && ClassStdValidation() && EmailValidation() && await RegisterDataValidationAsync())
+            if(RegisterValidation() && RegisterNumberValidation() && ClassStdValidation() && EmailValidation() && await RegisterDataValidationAsync()) // Validation Check
             {               
-                PopulateRegisterAsync();
+                PopulateRegisterAsync(); // Data populate
             }
                 
         }
@@ -76,7 +77,7 @@ namespace XamarinSample.Activities
             }
         }
 
-        public bool RegisterValidation()
+        public bool RegisterValidation() //main validation
         {
             //Regex RegisterNumberPattern = new Regex(@"^\d+$");
             //Regex ClassStdPattern = new Regex(@"^\d+$");
@@ -146,7 +147,7 @@ namespace XamarinSample.Activities
             return true;
         }
           
-        public bool RegisterNumberValidation()
+        public bool RegisterNumberValidation() 
         {
             Regex RegisterNumberPattern = new Regex(@"^\d+$");
 
@@ -188,7 +189,7 @@ namespace XamarinSample.Activities
             }
         }
         
-        public async Task<bool> RegisterDataValidationAsync()
+        public async Task<bool> RegisterDataValidationAsync() //data validation
         {
             List<StudentUserDataModel> DataModels = await Database.SelectTable<StudentUserDataModel>();
             var data = DataModels.FirstOrDefault(x => x.RegisterNumber == register.Text);

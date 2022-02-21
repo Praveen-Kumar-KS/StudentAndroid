@@ -31,15 +31,16 @@ namespace XamarinSample.Activities
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //Bindings will be done here
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.StudentList);
-            PopulateData();
+            SetContentView(Resource.Layout.StudentList); // calling the view
+            PopulateData(); // calling PopulateData()
             recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerViewList);
             layoutManager = new LinearLayoutManager(this);
             Edit = FindViewById<Button>(Resource.Id.editList);
             Delete = FindViewById<Button>(Resource.Id.deleteList);
             recyclerView.SetLayoutManager(layoutManager);
-            RefreshListAsync();
+            RefreshListAsync(); // refresh the list
         }
 
         public async Task PopulateData()
