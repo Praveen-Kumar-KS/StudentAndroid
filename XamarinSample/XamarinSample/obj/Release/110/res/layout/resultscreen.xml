@@ -1,0 +1,98 @@
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="#feb209" android:scrollbars="vertical" android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><include layout="@drawable/tabheader" /><androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/listViewSnack" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="40dp" android:scrollbars="vertical"><!--<com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+</com.google.android.material.textfield.TextInputLayout>--><!--<EditText
+android:id="@+id/name_text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:inputType="text"
+android:hint="Student Name    "
+android:layout_marginLeft="14dp"
+    android:layout_marginTop="40dp"
+    android:padding="25dp"
+android:background="@drawable/RectangularShape"
+/>--></LinearLayout><!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:layout_marginTop="40dp"
+
+          >
+
+    <EditText
+android:id="@+id/regNo_text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:inputType="text"
+android:hint="Register Number"
+android:layout_marginLeft="180dp"
+android:layout_marginTop="40dp"
+android:padding="25dp"
+android:background="@drawable/RectangularShape"
+/>
+
+  </LinearLayout>--><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.7dp" android:layout_marginTop="100dp" android:layout_marginRight="15.7dp" android:scrollbars="vertical" android:orientation="vertical"><FrameLayout android:layout_width="match_parent" android:layout_height="600dp" android:orientation="vertical"><ImageView android:layout_width="wrap_content" android:layout_height="500dp" android:background="@drawable/white_cueve_bg" /><LinearLayout android:id="@+id/linearAdmin" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="20.7dp"><!--        <EditText
+    android:id="@+id/sub_text1"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:inputType="text"
+    android:hint="Subject 1"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="20dp"
+    android:padding="25dp"
+    android:background="@drawable/RectangularShape"
+/>
+        <EditText
+    android:id="@+id/sub_text2"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:inputType="text"
+    android:hint="Subject 2"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="20dp"
+    android:padding="25dp"
+    android:background="@drawable/RectangularShape"
+/>
+        <EditText
+    android:id="@+id/sub_text3"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:inputType="text"
+    android:hint="Subject 3"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="20dp"
+    android:padding="25dp"
+    android:background="@drawable/RectangularShape"
+/>--><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/name_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Student Name" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/regNo_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Register Number" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/sub_text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Subject 1" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/sub_text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Subject 2" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/sub_text3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Subject 3" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/sub_text4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Subject 4" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/sub_text5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Subject 5" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/total_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:hint="Total" android:inputType="number" android:fontFamily="@font/poppins_semibold" android:maxLines="1" android:textCursorDrawable="@drawable/grey_cursor_color" android:textColor="#000000" android:textSize="13.3sp" /></com.google.android.material.textfield.TextInputLayout><Button android:id="@+id/resultSubmitBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="120dp" android:text="Submit" android:textColor="@color/btn" android:background="@drawable/custombtn" /></LinearLayout><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"><!--<EditText
+    android:id="@+id/sub_text4"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:inputType="text"
+    android:hint="Subject 4"
+    android:layout_marginLeft="170dp"
+    android:layout_marginTop="20dp"
+    android:padding="25dp"
+    android:background="@drawable/RectangularShape"
+/>
+        <EditText
+    android:id="@+id/sub_text5"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:inputType="text"
+    android:hint="Subject 5"
+    android:layout_marginLeft="170dp"
+    android:layout_marginTop="20dp"
+    android:padding="25dp"
+    android:background="@drawable/RectangularShape"
+/>
+        <EditText
+    android:id="@+id/total_text"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:inputType="text"
+    android:hint="Total"
+    android:layout_marginLeft="170dp"
+    android:layout_marginTop="20dp"
+    android:padding="28dp"
+    android:background="@drawable/RectangularShape"
+/>--><Button android:id="@+id/attenNavBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="170dp" android:layout_marginTop="508dp" android:text="Attendance" android:textColor="@color/btn" android:background="@drawable/custombtn" /></LinearLayout></FrameLayout></LinearLayout></androidx.coordinatorlayout.widget.CoordinatorLayout></RelativeLayout>
