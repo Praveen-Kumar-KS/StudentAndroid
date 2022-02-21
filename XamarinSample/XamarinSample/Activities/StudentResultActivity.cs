@@ -37,7 +37,7 @@ namespace XamarinSample.Activities
             try
             {
                 List<SubjectDataModel> student = await Database.SelectTable<SubjectDataModel>();
-                var subData = student.Where(x => x.RegisterNumber == RegisterNumber).FirstOrDefault();
+                var subData = student.Where(x => x.RegisterNumber == RegisterNumber).FirstOrDefault(); //Get By ID
                 if (subData != null)
                 {
                     Subject1.Text = subData.Subject1;
@@ -45,7 +45,7 @@ namespace XamarinSample.Activities
                     Subject3.Text = subData.Subject3;
                     Subject4.Text = subData.Subject4;
                     Subject5.Text = subData.Subject5;
-                    Total.Text = subData.Total;
+                    Total.Text = subData.Total; // Display Result
                 }
             }
 

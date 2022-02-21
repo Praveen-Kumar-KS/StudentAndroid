@@ -68,9 +68,9 @@ namespace XamarinSample.Activities
         public async Task ResultData()
         {
             List<StudentUserDataModel> StudentsDataModels = await Database.SelectTable<StudentUserDataModel>();
-            var studentId = StudentsDataModels.FirstOrDefault(x => x.Name == studentName.Text && x.RegisterNumber == registerNumber.Text);
+            var studentId = StudentsDataModels.FirstOrDefault(x => x.Name == studentName.Text && x.RegisterNumber == registerNumber.Text); // GetById
             List<SubjectDataModel> subData = await Database.SelectTable<SubjectDataModel>();
-            var data = subData.FirstOrDefault(x => x.Name == studentName.Text && x.RegisterNumber == registerNumber.Text);
+            var data = subData.FirstOrDefault(x => x.Name == studentName.Text && x.RegisterNumber == registerNumber.Text); //Update through the Id
             if(Validate() && RegisterNumberValidation() && SubjectValidation() && TotalEntryValidation() && await DataRegisterValidationAsync())
             {
                 if (studentId != null)
@@ -78,6 +78,7 @@ namespace XamarinSample.Activities
                     SubjectDataModel subject = new SubjectDataModel();
                     if (data == null)
                     {
+                        //Insert
                         subject.Id = studentId.Id;
                         subject.Name = studentName.Text;
                         subject.RegisterNumber = registerNumber.Text;
@@ -87,13 +88,14 @@ namespace XamarinSample.Activities
                         subject.Subject4 = sub4.Text;
                         subject.Subject5 = sub5.Text;
                         subject.Total = total.Text;
-                        subject.UserId = studentId.Id;
+                        subject.UserId = studentId.Id; // update
                         await Database.InsertIntoTable(subject);
                         Toast.MakeText(this, "Submitted", ToastLength.Short).Show();
                         ClearText();
                     }
                     else
                     {
+                        //update
                         subject.Id = data.Id;
                         subject.Name = studentName.Text;
                         subject.RegisterNumber = registerNumber.Text;
@@ -103,7 +105,7 @@ namespace XamarinSample.Activities
                         subject.Subject4 = sub4.Text;
                         subject.Subject5 = sub5.Text;
                         subject.Total = total.Text;
-                        subject.UserId = studentId.Id;
+                        subject.UserId = studentId.Id; // update
                         await Database.UpdateById(subject);
                         Toast.MakeText(this, "Submitted", ToastLength.Short).Show();
                         ClearText();

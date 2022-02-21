@@ -45,7 +45,7 @@ namespace XamarinSample.Activities
         public async Task Login()
         {
             List<StudentUserDataModel> studentUserDataModels = await Database.SelectTable<StudentUserDataModel>();
-            var login = studentUserDataModels.Where(x => x.RegisterNumber == register.Text && x.Password == password.Text).FirstOrDefault();
+            var login = studentUserDataModels.Where(x => x.RegisterNumber == register.Text && x.Password == password.Text).FirstOrDefault(); //Get by ID
             if (LoginValidation())
             {
                 if (login != null)
@@ -53,7 +53,7 @@ namespace XamarinSample.Activities
                     Toast.MakeText(this, "You're in..", ToastLength.Short).Show(); 
                     Intent i = new Intent(this, typeof(StudentResultActivity));
                     i.PutExtra("RegisterNumber", register.Text.ToString());
-                    StartActivity(i);
+                    StartActivity(i); // Navigation
                     //StartActivity(new Intent(Application.Context, typeof(StudentResultActivity)));
                 }
 

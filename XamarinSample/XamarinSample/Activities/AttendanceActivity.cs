@@ -44,7 +44,7 @@ namespace XamarinSample.Activities
             PopulateAttendance();
         }
 
-        public async Task PopulateAttendance()
+        public async Task PopulateAttendance() // Insert operation
         {
             List<StudentUserDataModel> attendanceDataModel = await Database.SelectTable<StudentUserDataModel>();
             var attendance = attendanceDataModel.FirstOrDefault(x => x.Name == Name.Text && x.RegisterNumber == RegNo.Text);

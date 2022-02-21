@@ -55,7 +55,7 @@ namespace XamarinSample.Activities
                 
         }
 
-        public async Task PopulateRegisterAsync()
+        public async Task PopulateRegisterAsync() // Insert Operation
         {
             StudentUserDataModel studentUserDataModel = new StudentUserDataModel();
             studentUserDataModel.Name = Name.Text;
