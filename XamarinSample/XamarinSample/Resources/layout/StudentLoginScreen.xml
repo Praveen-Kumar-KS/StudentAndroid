@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#feb209"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15.7dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="15.7dp"
+      android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="500dp"
+          android:background="@drawable/white_cueve_bg" />
+
+
+      <LinearLayout
+          android:id="@+id/linear"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingLeft="20.7dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57.7dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="LOGIN"
+            android:textColor="#030303"
+            android:textSize="31.3sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <EditText
+              android:id="@+id/txtregister"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:hint="Register No"
+              android:inputType="number"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/grey_cursor_color"
+            android:textSize="15sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+                       android:layout_marginTop="35dp">
+
+          <EditText
+              android:id="@+id/txtpassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:hint="Password"
+              android:inputType="textPassword"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/grey_cursor_color"
+            android:textSize="15sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginValidationMessage"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:maxLines="4"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:text="Registration Entry is Required"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/validation_textColor"
+        android:visibility="invisible"/>
+
+        <Button
+         android:id="@+id/RegisterLoginBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="100dp"
+         android:layout_marginTop="30dp"
+         android:text="Register"
+         android:textColor="@color/btn"
+         android:background="@drawable/CustomBtn"
+        />
+
+        <Button
+          android:id="@+id/SubmitLoginBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="150dp"
+          android:layout_marginTop="30dp"
+          android:text="Go"
+          android:textColor="@color/btn"
+          android:background="@drawable/CustomBtn"
+        />
+
+      </LinearLayout>
+
+ 
+    </FrameLayout>
+
+
+  </LinearLayout>
+
+
+  
+
+</RelativeLayout>

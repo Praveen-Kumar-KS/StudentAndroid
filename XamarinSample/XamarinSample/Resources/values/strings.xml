@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">XamarinSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo">Logo</string>
+    <string name="Admin">Admin</string>
+    <string name="Students">Students</string>
+        <string name="Results">Results</string>
+      <string name="Attendance">Attendance</string>
+
+
+
+
+
+</resources>

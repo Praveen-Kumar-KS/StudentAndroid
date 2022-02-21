@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#feb209"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15.7dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="15.7dp"
+      android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="500dp"
+          android:background="@drawable/white_cueve_bg" />
+      
+      <LinearLayout
+          android:id="@+id/linearMin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingLeft="20.7dp">
+
+        <Button
+        android:id="@+id/adminInbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Admin"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:drawableTop="@drawable/rowmoveicon"
+        android:paddingTop="20dp"
+        android:textColor="@color/InvenTextColor"
+        android:background="@drawable/CustomizedSquare">
+        </Button>
+
+        <Button
+              android:id="@+id/studentInbtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/Students"
+              android:layout_marginRight="50dp"
+              android:layout_marginTop="70dp"
+              android:drawableTop="@drawable/rowmoveicon"
+              android:paddingTop="20dp"
+              android:textColor="@color/InvenTextColor"
+              android:background="@drawable/CustomizedSquare">
+        </Button>
+
+
+      </LinearLayout>
+      </FrameLayout>
+    </LinearLayout>
+  
+  
+</RelativeLayout>
+
